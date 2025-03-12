@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
 import 'package:tiktok/constant.dart';
+import 'package:tiktok/view/screens/auth/signup_screen.dart';
 import 'package:tiktok/view/widgets/text_input_field.dart';
 
 class LoginScreen extends StatelessWidget {
@@ -41,7 +43,7 @@ class LoginScreen extends StatelessWidget {
               width: double.infinity,
               margin: const EdgeInsets.symmetric(horizontal: 20),
               child: TextInputField(
-                  controller: _emailController,
+                  controller: _passwordController,
                   labeltext: 'password',
                   isobscure: true,
                   icon: Icons.lock),
@@ -50,7 +52,9 @@ class LoginScreen extends StatelessWidget {
               height: 25,
             ),
             ElevatedButton(
-              onPressed: () {},
+              onPressed: () => authController.LoginUser(
+                  _emailController.text.trim(),
+                  _passwordController.text.trim()),
               child: const Text('Login'),
               style: ElevatedButton.styleFrom(
                 backgroundColor: buttonColor,
@@ -66,7 +70,12 @@ class LoginScreen extends StatelessWidget {
                 const SizedBox(width: 20),
                 const Text('Don\'t have an account?'),
                 TextButton(
-                  onPressed: () {},
+                  onPressed: () {
+                    Navigator.push(context,
+                        MaterialPageRoute(builder: (context) {
+                      return SignupScreen();
+                    }));
+                  },
                   child: const Text('Register'),
                 )
               ],

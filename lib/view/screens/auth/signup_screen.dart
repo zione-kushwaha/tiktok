@@ -1,4 +1,9 @@
+import 'dart:io';
+
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
+import 'package:iconsax/iconsax.dart';
+import 'package:image_picker/image_picker.dart';
 
 import '../../../constant.dart';
 import '../../widgets/text_input_field.dart';
@@ -34,7 +39,7 @@ class SignupScreen extends StatelessWidget {
                     radius: 50,
                     backgroundColor: buttonColor,
                     child: Icon(
-                      Icons.person,
+                      Iconsax.user_add,
                       size: 50,
                       color: Colors.white,
                     ),
@@ -48,9 +53,12 @@ class SignupScreen extends StatelessWidget {
                         color: Colors.white,
                         borderRadius: BorderRadius.circular(20),
                       ),
-                      child: Icon(
-                        Icons.add,
-                        color: buttonColor,
+                      child: InkWell(
+                        onTap: () => authController.pickImage(),
+                        child: Icon(
+                          Iconsax.camera,
+                          color: buttonColor,
+                        ),
                       ),
                     ),
                   )
@@ -86,7 +94,7 @@ class SignupScreen extends StatelessWidget {
                 width: double.infinity,
                 margin: const EdgeInsets.symmetric(horizontal: 20),
                 child: TextInputField(
-                    controller: _emailController,
+                    controller: _passwordController,
                     labeltext: 'password',
                     isobscure: true,
                     icon: Icons.lock),
@@ -95,12 +103,17 @@ class SignupScreen extends StatelessWidget {
                 height: 25,
               ),
               ElevatedButton(
-                onPressed: () {},
-                child: const Text('Signup'),
+                onPressed: () => authController.registerUser(
+                    _emailController.text.trim(),
+                    _passwordController.text.trim(),
+                    _userNameController.text.trim(),
+                    authController.Profilepick),
                 style: ElevatedButton.styleFrom(
                   backgroundColor: buttonColor,
                   padding: const EdgeInsets.symmetric(horizontal: 100),
                 ),
+                child: const Text('Signup',
+                    style: TextStyle(fontSize: 20, color: Colors.white)),
               ),
               const SizedBox(
                 height: 25,
@@ -111,8 +124,10 @@ class SignupScreen extends StatelessWidget {
                   const SizedBox(width: 20),
                   const Text('Already have an account?'),
                   TextButton(
-                    onPressed: () {},
-                    child: const Text('Register'),
+                    onPressed: () {
+                      Get.back();
+                    },
+                    child: const Text('login'),
                   )
                 ],
               )
