@@ -1,0 +1,134 @@
+{
+  "project_info": {
+    "project_number": "679798173227",
+    "project_id": "fir-practice-36b40",
+    "storage_bucket": "fir-practice-36b40.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:679798173227:android:251c60a6529fe4eeee846e",
+        "android_client_info": {
+          "package_name": "com.example.d"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "679798173227-nsl6tlpe0lmq307229lauiac3aqptpnf.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBAE5ZI413s0HD3_gTzsBwE9eKwIBnNiWI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "679798173227-nsl6tlpe0lmq307229lauiac3aqptpnf.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:679798173227:android:42005d0c59f7be7cee846e",
+        "android_client_info": {
+          "package_name": "com.example.o"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "679798173227-nsl6tlpe0lmq307229lauiac3aqptpnf.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBAE5ZI413s0HD3_gTzsBwE9eKwIBnNiWI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "679798173227-nsl6tlpe0lmq307229lauiac3aqptpnf.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:679798173227:android:b5ba62261b6e9f7fee846e",
+        "android_client_info": {
+          "package_name": "com.example.sahara"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "679798173227-7vcvk2r12v9kbetie9d5konqofdjh5k0.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.sahara",
+            "certificate_hash": "cb2e7c24f1a5c05a1303278ad2bc5085ef628749"
+          }
+        },
+        {
+          "client_id": "679798173227-nsl6tlpe0lmq307229lauiac3aqptpnf.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBAE5ZI413s0HD3_gTzsBwE9eKwIBnNiWI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "679798173227-nsl6tlpe0lmq307229lauiac3aqptpnf.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:679798173227:android:60ff4f081001393eee846e",
+        "android_client_info": {
+          "package_name": "com.example.tiktok"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "679798173227-nsl6tlpe0lmq307229lauiac3aqptpnf.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBAE5ZI413s0HD3_gTzsBwE9eKwIBnNiWI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "679798173227-nsl6tlpe0lmq307229lauiac3aqptpnf.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
